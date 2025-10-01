@@ -1,6 +1,11 @@
-num1 = int(input("Enter num1: "))
-num2 = int(input("Enter num2: "))
+def main():
+ num1 = int(input("Enter num1: "))
+ num2 = int(input("Enter num2: "))
+ print(addition(num1, num2))
+ 
 
-sum = num1 / num2
+ 
+def addition(num1, num2):
+  return (num1 + num2)
 
-print(f"Sum is {sum:.2f}")
+main()
