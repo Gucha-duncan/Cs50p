@@ -1,15 +1,16 @@
-students = {
+def main():
+ students = {
     'Javy': 'Eldoret',
     'ManuBett': 'Kericho',
     'Alphonce': 'Siaya',
     'Mulu':'Ukambani',
 }
 
-for student in students:
+ for student in students:
     print(f"{student} lives in {students[student]}")
     
     
-cities = [
+ cities = [
     {'name': "Nairobi", 'country':'Kenya', 'continent': 'Africa'},
      {'name': "London", 'country':'England', 'continent': 'Europe'},
        {'name': "New York", 'country':'USA', 'continent': 'North America'},
@@ -17,6 +18,16 @@ cities = [
            {'name': "Kisumu", 'country':'Kenya', 'continent': 'Africa'},
 ]
 
-for city in cities:
+ for city in cities:
     print(f"{city['name']} is located in {city['country']}, {city['continent']}")
  
+ spacecraft ={'name':'Voyager 1', 'distance':163}
+ spacecraft['founder'] = 'Gucha'
+ print(create_report(spacecraft))
+ 
+def create_report(spacecraft):
+     
+     return f"{spacecraft['name']} has covered {spacecraft['distance']} miles today, founder is {spacecraft.get('founder', 'Unknown')}"
+     
+ 
+main()
