@@ -22,12 +22,14 @@ def main():
     print(f"{city['name']} is located in {city['country']}, {city['continent']}")
  
  spacecraft ={'name':'Voyager 1', 'distance':163}
- spacecraft['founder'] = 'Gucha'
+ spacecraft.update({'founder':'Gucha'})
  print(create_report(spacecraft))
  
 def create_report(spacecraft):
      
-     return f"{spacecraft['name']} has covered {spacecraft['distance']} miles today, founder is {spacecraft.get('founder', 'Unknown')}"
-     
+     return f"{spacecraft['name']} has covered {distance_converter(spacecraft['distance'])} miles today, founder is {spacecraft.get('founder', 'Unknown')}"
+
+def distance_converter(distance):
+    return distance * 1450707999    
  
 main()
