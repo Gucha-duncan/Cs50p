@@ -1,12 +1,10 @@
 def main():
-    people = int(input("How many people do you want to invite?  "))
+    names = ['Gucha', 'Mamu', 'Gecha', 'Jayv', 'Clinton', 'Duncan', 'Bowser']
     
-    
-    for person in  range(people):
-        receiver = input("Enter the receiver name: ").strip()
-        sender = input("Enter sender name: ").strip()
-        print(write_letter(receiver, sender)) 
-        person  = person -1
+    for name in names:
+        sender = 'Faith'
+        print(write_letter(name, sender))
+
         
         
     
