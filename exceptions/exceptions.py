@@ -1,11 +1,13 @@
 
+while True:
+    try:
+     x = int(input("Enter the value of x: "))
 
-try:
-    x = int(input("Enter the value of x: "))
-    
-    
-except ValueError:
-    print("Enter an integer only!")
-    
-else:
-    print(f"The entered value of x is : {x}")
+
+    except ValueError:
+     print("Enter an integer only!")
+
+    else:
+        
+     print(f"The entered value of x is : {x}")
+     break
